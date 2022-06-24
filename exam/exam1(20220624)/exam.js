@@ -37,7 +37,7 @@ function scoreInput() {
     // 3) Code Here : if문을 이용하여 맞은 개수의 범위가 0~20사이가 아니면 경고창 발생
     if (subjectScore < 0 || subjectScore > 20) {
         alert("각 과목당 맞춘 문제수(0~20)를 입력하세요");
-        // select
+        // subjectScore.select();
         return;
     }
 
@@ -94,7 +94,7 @@ function finalResult() {
     // 5-3) if문을 이용하여 합격 또는 불합격 여부를 html의 finalResult 위치에 출력
     // Code Here
     let finalResult = document.getElementById("finalResult");
-    if (failureCount >= 1 || avgResult >= 60) {
+    if (failureCount >= 1 && avgResult >= 60) {
         finalResult.innerHTML = "불합격";
     } else {
         finalResult.innerHTML = "합격";
