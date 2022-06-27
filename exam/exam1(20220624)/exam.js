@@ -5,7 +5,8 @@ window.onload = function() {
 
     for(let i = 0; i<score.length; ++i) {
         // 2) Code Here
-        score[i].addEventListener('keyup', scoreInput);
+        // score[i].addEventListener('keyup', scoreInput);
+        score[i].keyup = scoreInput;
         // score[i].addEventListener('keyup', () => {
             // let tmp = i;
             // let correctNum = score[i].value;
