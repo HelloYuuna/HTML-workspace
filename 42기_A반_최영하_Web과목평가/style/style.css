@@ -1,0 +1,55 @@
+@charset "utf-8";
+/* Code Here */
+div#container {
+	width: 850px;
+	margin: auto auto;
+}
+
+h2.title {
+	text-align:center;
+}
+
+table, th, td {
+	width: 800px;
+	padding: 10px;
+	border: 1px dotted gray;
+	border-collapse: collapse;
+}
+
+td:hover {
+	background-color:rgb(255, 249, 213);
+	opacity: 50%;
+}
+
+th {
+	text-align: left;
+	font-weight: bold;
+}
+
+th span {
+	color: red;
+	font-weight: bold;
+}
+
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+	background-color:rgb(251, 209, 165);
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
+	width: 300px;
+}
+
+textarea.survey {
+	resize: none;
+	width:770px;
+	height: 100px;
+}
+
+td.btn {
+	text-align: center;
+} 
