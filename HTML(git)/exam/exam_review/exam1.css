@@ -1,8 +1,8 @@
 @charset "utf-8";
 
 div.wrapper {
-	width: 90%;
-	margin: auto;
+	width: 80%;
+	margin: 0 auto;
 	border: 1px dotted #086788;
 	padding: 10px;
 	color: #696969;
@@ -23,6 +23,10 @@ h2 {
 p.msg {
 	color: #DD1C1A;
 	font-weight: 600;
+}
+
+ol {
+	padding-left: 30px;
 }
 
 li {
