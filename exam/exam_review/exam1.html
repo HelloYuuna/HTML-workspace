@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>exam1</title>
+		<link rel="stylesheet" href="./exam1.css" />
+		<script defer src="./exam1.js"></script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<h1>[ 정보처리 기사 필기 결과 ]</h1>
+			<h2># 가채점 예상점수를 입력하세요.</h2>
+			<p class="msg">맞춘 개수</p>
+			<ol>
+				<li>
+					<span class="subject">소프트웨어 설계</span>20문제 중
+					<input
+						type="text"
+						id="one"
+						class="subjectScore"
+						placeholder="0"
+					/>
+					[예상점수]<span id="resultOne" class="subjectResult">
+						__ </span
+					>점
+				</li>
+				<li>
+					<span class="subject">소프트웨어 개발</span>20문제 중
+					<input
+						type="text"
+						id="two"
+						class="subjectScore"
+						placeholder="0"
+					/>
+					[예상점수]<span id="resultTwo" class="subjectResult">
+						__ </span
+					>점
+				</li>
+				<li>
+					<span class="subject">데이터베이스 구축</span>20문제 중
+					<input
+						type="text"
+						id="three"
+						class="subjectScore"
+						placeholder="0"
+					/>
+					[예상점수]<span id="resultThree" class="subjectResult">
+						__ </span
+					>점
+				</li>
+				<li>
+					<span class="subject">프로그래밍 언어활용</span>20문제 중
+					<input
+						type="text"
+						id="four"
+						class="subjectScore"
+						placeholder="0"
+					/>
+					[예상점수]<span id="resultFour" class="subjectResult">
+						__ </span
+					>점
+				</li>
+				<li>
+					<span class="subject">정보시스템 구축관리</span>20문제 중
+					<input
+						type="text"
+						id="five"
+						class="subjectScore"
+						placeholder="0"
+					/>
+					[예상점수]<span id="resultFive" class="subjectResult">
+						__ </span
+					>점
+				</li>
+			</ol>
+			<input type="button" id="confirm" value="최종결과확인" />
+			<h2># 최종 결과</h2>
+			<p class="msg">
+				합격 : 100점을 만점으로 하여 과목당 40점 이상, 전과목 평균 60점
+				이상.
+			</p>
+			<ul>
+				<li>평균 : <span id="avg">0</span>점</li>
+				<li>과롹된 과목 수 : <span id="failCnt">0</span>과목</li>
+			</ul>
+			<p id="finalResult">합격 여부</p>
+		</div>
+	</body>
+</html>
